@@ -1,6 +1,12 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 
+// Interceptors are used to intercept requests and responses.
+// They are used to log requests and responses.
+// They are used to add headers to requests.
+// They are used to add a token to requests.
+// They are used to refresh a token.
+
 class AppInterceptors extends Interceptor {
   @override
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
